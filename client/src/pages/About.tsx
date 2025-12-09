@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import GlitchText from "@/components/ui/GlitchText";
 
 const skills = [
-  "React / Next.js", "TypeScript", "Three.js / R3F", "WebGL / GLSL", 
-  "Tailwind CSS", "Node.js", "PostgreSQL", "Framer Motion"
+  "C Programming",
+  "OOPs Concepts",
+  "C++",
+  "Data Structures & Algorithms",
+  "Visual Basic"
 ];
 
 const experience = [
