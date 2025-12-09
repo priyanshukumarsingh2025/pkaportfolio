@@ -5,31 +5,21 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     id: 1,
-    title: "NEON_DREAMS",
-    category: "3D EXPERIENCE",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
-    tech: ["R3F", "Next.js", "GLSL"]
+    title: "Tic Tac Toe",
+    category: "GAME",
+    description: "A simple but engaging Tic Tac Toe game built with clean logic and instant move response. An intro project that helped me understand game loops, conditions, and UI handling.",
+    image: "/tic-tac-toe.jpg",
+    tech: ["JavaScript", "HTML", "CSS"],
+    year: "2024"
   },
   {
     id: 2,
-    title: "CYBER_DASH",
-    category: "WEB APPLICATION",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-    tech: ["React", "Tailwind", "D3.js"]
-  },
-  {
-    id: 3,
-    title: "VOID_COMMERCE",
-    category: "E-COMMERCE",
-    image: "https://images.unsplash.com/photo-1515630278258-407f66498911?q=80&w=2069&auto=format&fit=crop",
-    tech: ["Shopify", "Liquid", "GSAP"]
-  },
-  {
-    id: 4,
-    title: "GLITCH_GALLERY",
-    category: "PORTFOLIO",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
-    tech: ["Vue", "Nuxt", "WebGL"]
+    title: "Stone Paper Scissors",
+    category: "GAME",
+    description: "A fast, interactive game designed with responsive UI and dynamic win-lose logic. Perfect for understanding conditions and user interaction flow.",
+    image: "/stone-paper-scissors.jpg",
+    tech: ["JavaScript", "HTML", "CSS"],
+    year: "2024"
   }
 ];
 
@@ -59,16 +49,19 @@ export default function Projects() {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover transition-all duration-500"
                 />
               </div>
               
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                  <p className="font-mono text-sm text-muted-foreground">{project.category}</p>
+              <div>
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
+                    <p className="font-mono text-sm text-muted-foreground">{project.category} • {project.year}</p>
+                  </div>
                 </div>
-                <div className="flex gap-2">
+                <p className="font-mono text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <div className="flex gap-2 flex-wrap">
                   {project.tech.map((t, i) => (
                     <Badge key={i} variant="outline" className="rounded-none border-white/20 text-xs font-mono">
                       {t}

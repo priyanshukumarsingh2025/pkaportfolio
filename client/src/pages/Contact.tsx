@@ -44,19 +44,18 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-6xl md:text-8xl font-display font-bold mb-8 text-white">
-            PING_<span className="text-primary">ME</span>
+            CONTACT_<span className="text-primary">ME</span>
           </h1>
           <p className="font-mono text-lg text-muted-foreground mb-12 max-w-md">
-            Interested in working together? Have a project in mind? Or just want to say hi? 
-            Drop a message into the void.
+            Want to work on a project together? Have an idea, collaboration request, or just want to say hi? Feel free to reach out — I’m always open to new opportunities.
           </p>
 
           <div className="space-y-4 font-mono text-lg">
-            <a href="mailto:hello@example.com" className="block text-white hover:text-primary transition-colors">
-              hello@example.com
+            <a href="mailto:rishurajput051205@gmail.com" className="block text-white hover:text-primary transition-colors">
+              rishurajput051205@gmail.com
             </a>
-            <a href="#" className="block text-white hover:text-primary transition-colors">
-              @social_handle
+            <a href="https://www.linkedin.com/in/priyanshu-kumar-singh-950404354" className="block text-white hover:text-primary transition-colors">
+              www.linkedin.com/in/priyanshu-kumar-singh-950404354
             </a>
           </div>
         </motion.div>
@@ -77,7 +76,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="font-mono text-primary">NAME</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg h-12" />
+                      <Input placeholder="priyanshu kumar singh" {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg h-12" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,7 +89,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="font-mono text-primary">EMAIL</FormLabel>
                     <FormControl>
-                      <Input placeholder="john@example.com" {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg h-12" />
+                      <Input placeholder="your rishurajput051205@gmail.com" {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg h-12" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -103,7 +102,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="font-mono text-primary">MESSAGE</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Tell me about your project..." {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg min-h-[150px] resize-none" />
+                      <Textarea placeholder="Write your message..." {...field} className="rounded-none border-x-0 border-t-0 border-b-2 border-white/20 bg-transparent px-0 focus-visible:ring-0 focus-visible:border-primary placeholder:text-muted-foreground/50 font-mono text-lg min-h-[150px] resize-none" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

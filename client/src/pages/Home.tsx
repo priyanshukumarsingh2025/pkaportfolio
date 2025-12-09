@@ -20,9 +20,13 @@ export default function Home() {
             // CREATIVE_DEVELOPER_PORTFOLIO
           </h2>
           <div className="text-6xl md:text-9xl font-display font-bold leading-[0.8] mb-8 text-white mix-blend-difference">
-            <GlitchText text="DIGITAL" /><br />
-            <GlitchText text="ALCHEMY" className="text-stroke" />
+            <GlitchText text="PRIYANSHU" /><br />
+            <GlitchText text="KUMAR SINGH" className="text-stroke" />
           </div>
+          
+          <p className="text-primary font-mono tracking-widest mb-6">
+            creative developer | next.js typescript three.js
+          </p>
           
           <p className="text-muted-foreground font-mono max-w-xl text-lg mb-10 leading-relaxed">
             Crafting immersive digital experiences with Next.js, Three.js, and raw code.

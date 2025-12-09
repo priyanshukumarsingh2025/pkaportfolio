@@ -36,14 +36,35 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div>
-            <p className="font-mono text-lg text-muted-foreground leading-relaxed mb-10">
-              I am a creative developer obsessed with the space between design and engineering. 
-              I don't just write code; I craft digital atmospheres. My work is defined by 
-              bold typography, micro-interactions, and 3D depth.
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mb-10 group w-fit"
+            >
+              <div className="relative border-4 border-primary p-2 bg-black/50 backdrop-blur-sm hover:border-white transition-all duration-300 max-w-[280px] max-h-[350px]">
+                <div className="absolute -top-2 -left-2 w-4 h-4 bg-primary group-hover:bg-white transition-colors"></div>
+                <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary group-hover:bg-white transition-colors"></div>
+                <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-primary group-hover:bg-white transition-colors"></div>
+                <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-primary group-hover:bg-white transition-colors"></div>
+                <div className="relative overflow-hidden border-2 border-white/20">
+                  <img 
+                    src="/mypic.jpg" 
+                    alt="Priyanshu Kumar Singh" 
+                    className="w-[250px] h-[300px] object-cover transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+                </div>
+              </div>
+            </motion.div>
+            <p className="font-mono text-lg text-muted-foreground leading-relaxed mb-6">
+              I am Priyanshu Kumar Singh, a creative developer currently in my final year of BCA. I love building interactive, bold, and animated web experiences that blend clean design with modern engineering.
+            </p>
+            <p className="font-mono text-lg text-muted-foreground leading-relaxed mb-6">
+              I explore the web like a playground—experimenting with motion, 3D elements, and micro-interactions that make interfaces feel alive. I’ve built fun projects like Tic-Tac-Toe and Stone–Paper–Scissors, and I’m constantly leveling up my skills in Next.js, TypeScript, and modern UI animation tools.
             </p>
             <p className="font-mono text-lg text-muted-foreground leading-relaxed">
-              Based in the digital void, working globally. Always pushing the boundaries 
-              of what's possible in a browser.
+              My goal is simple: craft digital experiences that feel immersive, energetic, and unforgettable.
             </p>
           </div>
 
